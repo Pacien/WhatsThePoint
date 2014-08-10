@@ -1,0 +1,17 @@
+---
+type: title
+title: Hello World!
+notes: |
+  notes notes notes
+  notes
+---
+title: First part
+subtitle: The first slide
+content: |
+  Hello, how are you?
+notes: |
+  notes
+---
+subtitle: The second slide
+content: |
+  I'm fine, thank you!

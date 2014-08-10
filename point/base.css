@@ -1,0 +1,114 @@
+/*
+ *	This file is part of "What's The Point" <https://github.com/Pacien/WhatsThePoint>
+ *	Copyright (C) 2014  Pacien TRAN-GIRARD
+ *
+ *	"What's The Point" is free software: you can redistribute it and/or modify
+ *	it under the terms of the GNU Affero General Public License as
+ *	published by the Free Software Foundation, either version 3 of the
+ *	License, or (at your option) any later version.
+ *
+ *	"What's The Point" is distributed in the hope that it will be useful,
+ *	but WITHOUT ANY WARRANTY; without even the implied warranty of
+ *	MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ *	GNU Affero General Public License for more details.
+ *
+ *	You should have received a copy of the GNU Affero General Public License
+ *	along with this program.  If not, see <http://www.gnu.org/licenses/>.
+ */
+@import url("libs/normalizecss/normalize.css");
+
+html {
+	width: 100%;
+	height: 100%;
+}
+
+body {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	background: black;
+}
+
+noscript {
+	position: absolute;
+	width: 20em;
+	height: 5em;
+	margin: auto;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	text-align: center;
+	color: white;
+	background: black;
+}
+
+/* loading animation */
+/* http://codepen.io/lixquid/pen/ybjmr */
+
+#loadingclock {
+	position: absolute;
+	margin: auto;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	width: 48px;
+	height: 48px;
+	border: 2px solid #ccc;
+	border-radius: 100%;
+}
+
+#loadingclock:before {
+	display: block;
+	position: absolute;
+	left: 23px;
+	top: 2px;
+	width: 2px;
+	height: 22px;
+	background-color: #ccc;
+	animation: spin 3s linear infinite;
+	-webkit-animation: spin 3s linear infinite;
+	content: " ";
+	transform-origin: 1px 22px;
+	-webkit-transform-origin: 1px 22px;
+}
+
+#loadingclock:after {
+	display: block;
+	position: absolute;
+	left: 23px;
+	top: 3px;
+	width: 2px;
+	height: 21px;
+	background-color: #ccc;
+	animation: spin 18s linear infinite;
+	-webkit-animation: spin 18s linear infinite;
+	content: "";
+	transform-origin: 1px 21px;
+	-webkit-transform-origin: 1px 21px;
+}
+
+@-moz-keyframes spin {
+	to {
+		transform: rotate(360deg);
+	}
+}
+
+@-webkit-keyframes spin {
+	to {
+		-webkit-transform: rotate(360deg);
+	}
+}
+
+@-o-keyframes spin {
+	to {
+		transform: rotate(360deg);
+	}
+}
+
+@keyframes spin {
+	to {
+		transform: rotate(360deg);
+	}
+}

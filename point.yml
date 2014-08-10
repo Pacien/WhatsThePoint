@@ -1,0 +1,52 @@
+#
+# What's The Point presentation configuration file
+#
+
+data:
+  file: "../slides.yml"
+  type:
+    #html
+    markdown
+    #pdf
+
+dimension:
+  width: 1100
+  height: 700
+
+theme:
+  #default
+  clean
+  #aperture
+
+control:
+  #local
+  remote:
+    webcastorUrl: "https://webcastor.herokuapp.com:443"
+    channelId: "fc503470-051e-11e4-8b02-cbfbda9da717"
+
+binding:
+  - keyboard
+  - touch
+  - speech
+
+plugins:
+  - autoscale
+  #- prettify
+  #- chartjs
+  #- doge
+
+
+#
+# Plug-ins and others parameters
+#
+
+speechSettings:
+  lang: "fr-FR"
+  keywords:
+    NEXT_SLIDE:
+      - "suivant"
+    PREVIOUS_SLIDE:
+      - "précédent"
+
+prettifySettings:
+  lang: javascript
